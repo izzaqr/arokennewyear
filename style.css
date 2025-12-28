@@ -96,10 +96,37 @@ body {
 
 .gifts p {
     line-height: 1.4;
+    margin-bottom: 16px;
 }
 
-.gifts :nth-child(2) {
-    margin-bottom: 10px;
+.gifts p img {
+    height: 1em; /* высота как у текущего шрифта */
+    width: auto; /* сохраняем пропорции */
+    vertical-align: middle;
+}
+
+.needs:first-of-type {
+    margin-bottom: 20px;
+}
+
+.needs span {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.needs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.needs li {
+    margin-left: 25px;
+}
+
+.gifts li img {
+    height: 1em; /* высота как у текущего шрифта */
+    width: auto; /* сохраняем пропорции */
 }
 
 .send-button {
