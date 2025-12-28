@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Письмо Деду Морозу</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="pacifico-font">
+        <div class="notebook">
+            <h1 class="title">Письмо Деду Морозу</h1>
+
+            <div class="header">
+                <div><strong>Дата:</strong> 28 декабря 2025</div>
+                <div><strong>Кому:</strong> Деду Морозу (Максиму)</div>
+                <div><strong>От кого:</strong> Амир</div>
+            </div>
+
+            <div class="content">
+                <div class="content__text">
+                    Дорогой Дедушка Мороз!<br />
+                    В этом году я был очень хорошим, вот пруфы:
+                </div>
+
+                <img src="gramota.png" alt="грамота" />
+
+                <div class="scotch">
+                    <img src="s1.png" alt="" />
+                    <img src="s2.png" alt="" />
+                </div>
+            </div>
+
+            <div class="gifts">
+                <strong>Мои новогодние пожелания:</strong>
+                <p>
+                    Мне, так-то, ничего не надо, здоровья всем людям желаю и
+                    чтобы счастливы были 🙄
+                </p>
+                <p>
+                    А если честно, из призового фонда от коврика или мыши не
+                    отказался бы
+                </p>
+            </div>
+
+            <button class="send-button">📨 Отправить письмо</button>
+            <p style="text-align: center; padding-top: 12px">
+                Кнопка не работает :(
+            </p>
+        </div>
+
+        <footer class="footer">
+            🎄 Всех с наступающим или уже наступившим Новым Годом! 🎄
+        </footer>
+
+        <script>
+            const snowCount = 200 // количество снежинок
+
+            for (let i = 0; i < snowCount; i++) {
+                const snowflake = document.createElement("div")
+                snowflake.classList.add("snowflake")
+
+                // рандомные размеры и позиция
+                const size = Math.random() * 8 + 4 // от 4px до 12px
+                snowflake.style.width = `${size}px`
+                snowflake.style.height = `${size}px`
+
+                snowflake.style.left = `${Math.random() * window.innerWidth}px`
+
+                // рандомная длительность падения
+                snowflake.style.animationDuration = `${5 + Math.random() * 10}s`
+
+                // рандомная задержка
+                snowflake.style.animationDelay = `${Math.random() * 10}s`
+
+                document.body.appendChild(snowflake)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap");
+
+.pacifico-font {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.caveat-font {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    font-size: 24px;
+    overflow-x: none;
+}
+
+.notebook {
+    width: 740px;
+    background-color: #fff;
+    padding: 44px 40px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #d3d3d3 1px, transparent 1px),
+        linear-gradient(to bottom, #d3d3d3 1px, transparent 1px);
+    background-size: 30px 30px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.title {
+    text-align: center;
+    color: #b22222;
+    margin-bottom: 30px;
+    font-size: 44px;
+}
+
+.header {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.header div {
+    margin: 5px 0;
+}
+
+.content {
+    position: relative;
+    margin-bottom: 46px;
+}
+
+.content__text {
+    font-size: 30px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.content .scotch img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.content .scotch img:nth-child(1) {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    rotate: -45deg;
+}
+
+.content .scotch img:nth-child(2) {
+    position: absolute;
+    bottom: -60px;
+    right: -30px;
+    rotate: 90deg;
+}
+
+.gifts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.gifts strong {
+    margin-bottom: 13px;
+}
+
+.gifts p {
+    line-height: 1.4;
+}
+
+.gifts :nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.send-button {
+    display: flex;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.send-button:hover {
+    background-color: #459b48;
+}
+
+.send-button:active {
+    scale: 1.02;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Снежинки */
+.snowflake {
+    position: absolute;
+    top: -13px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none; /* чтобы не мешали клику */
+    animation: fall linear infinite;
+}
+
+/* Анимация падения */
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(200vh) translateX(50px);
+        opacity: 0.2;
+    }
+}
